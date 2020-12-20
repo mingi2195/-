@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년을 보내며</title>
+
+    <link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
+
+
+    <meta property="og:image" content="https://www.christmastreeassociation.org/wp-content/uploads/2016/06/multiple-christmas-trees-in-one-household-800x400.jpg">
+    <meta property="og:title" content="만규에게 케로가">
+    <meta property="og:description" content="내년에 잘 지내보자우리">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Jua', sans-serif;
+        }
+
+        body {
+            background-color: #9B070F;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0 auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open{
+            display: none;
+        }
+
+
+
+        .rtan {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://postfiles.pstatic.net/MjAyMDEyMjBfMTA3/MDAxNjA4NDcxNjYzMzIz._sFV2AN9V1Gq9PugzCzJF-Czn8bssz7aD0eaPOuUqmgg.YE33XJ4nWp_UFCpa5rtSFHPq78eTDyC-wvqIWvXWdWsg.GIF.mingi2195/%EC%BC%80%EB%A1%9C.gif?type=w773');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0 auto;
+
+            border-radius: 100px;
+
+            border: 3px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                 width: 150px;
+                height: 150px;
+                margin: 70px auto 0 auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+            .envelope {
+              margin: 150px auto 0 auto;
+}
+        }
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+
+        }
+
+        function go_rtan() {
+            alert('얼른 내 입에 넣어줘!');
+            window.location.href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EA%B0%95%EC%95%84%EC%A7%80+%EA%B0%84%EC%8B%9D&oquery=align&tqi=U98PQdprvOsss4huQM4ssssstqR-110228"
+        }
+    </script>
+
+  
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어봐!</h2>
+    </div>
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>HAPPY NEW YEAR!</h1>
+        <div class="messagebox">
+            만규에게. <br />
+            올해 내가 잠시 스트릿 생활에 다사다난했다 <br />
+            집나가면 개고생이란 말이 뭔줄 알겠더라 <br />
+            내년부턴 얌전하게 있을테니 <br />
+            매일 간식 잊지말고 챙겨줘라 <br />
+            <p class="from">2020.12 케로가</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
